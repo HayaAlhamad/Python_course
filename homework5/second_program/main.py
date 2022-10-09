@@ -81,19 +81,15 @@ if __name__ == '__main__':
                         brand_name.append(j)
                         with open(full_path, 'w') as json_file:
                             json.dump(brand_name, json_file)
-                        existing_brand = brand_name
+                        existing_brand == brand_name
 
                     else:
                         with open(filename, 'r+') as json_file:
                             file_data = json.load(json_file)
                             file_data["brand"].append(existing_brand)
-                           # json_file.seek(0)
-                            # convert back to json.
                             json.dump(file_data, json_file)
 
-                       # existing_brand.append(j)
-                        #with open(full_path, 'w') as json_file:
-                            json.dump(existing_brand, json_file)
+
 #
 
 
